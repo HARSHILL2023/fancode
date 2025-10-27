@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="fancode.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main">
+    <nav>
+      <div><img
+          src="https://images.fancode.com/skillup-uploads/fc-web-logo/fc_logo_white_bg.svg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvZmMtd2ViLWxvZ28vZmNfbG9nb193aGl0ZV9iZy5zdmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOiJ0cmFuc3BhcmVudCIsIndpZHRoIjoyNjAsImhlaWdodCI6ODB9LCJ3ZWJwIjp7InF1YWxpdHkiOjYwLCJsb3NzbGVzcyI6ZmFsc2V9fSwib3V0cHV0Rm9ybWF0Ijoid2VicCJ9"
+          alt="" id="logo"></div>
+      <div class="text">HOME</div>
+      <div class="text">SCHEDULE</div>
+      <div class="text">CRICKET</div>
+      <div class="text">FOOTBALL</div>
+      <div class="text">MORE SPORTS</div>
+      <div class="text">SHOP</div>
+    </nav>
+    <div id="content"><img id="background"
+        src="data:image/jpeg;base64,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"
+        alt=""></div>
+    <div class="heading">Watch Live</div>
+    <div id="content">
+
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/West-Indies-tour-of-Bangladesh_2025_Old_match-card.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL1dlc3QtSW5kaWVzLXRvdXItb2YtQmFuZ2xhZGVzaF8yMDI1X09sZF9tYXRjaC1jYXJkLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsInBvc2l0aW9uIjoidG9wIiwid2lkdGgiOjU4MCwiaGVpZ2h0IjoyNDB9LCJ3ZWJwIjp7InF1YWxpdHkiOjYwLCJsb3NzbGVzcyI6ZmFsc2V9fSwib3V0cHV0Rm9ybWF0Ijoid2VicCJ9"
+            alt="">
+          <pre>  indies tour of bangladesh,2025
+
+ Bangladesh         (27.2) 178/1
+
+ West indies          yet to bat
+
+ projected score: 324 @ 6.5 RPO
+                </pre>
+        </div>
+      </a>
+
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/England-Tour-of-New-Zealand-2025_Old_match-card.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL0VuZ2xhbmQtVG91ci1vZi1OZXctWmVhbGFuZC0yMDI1X09sZF9tYXRjaC1jYXJkLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsInBvc2l0aW9uIjoidG9wIiwid2lkdGgiOjU4MCwiaGVpZ2h0IjoyNDB9LCJ3ZWJwIjp7InF1YWxpdHkiOjYwLCJsb3NzbGVzcyI6ZmFsc2V9fSwib3V0cHV0Rm9ybWF0Ijoid2VicCJ9"
+            alt="">
+          <pre>  indies tour of bangladesh,2025
+
+ Bangladesh         (27.2) 178/1
+
+ West indies          yet to bat
+
+ projected score: 324 @ 6.5 RPO
+                </pre>
+        </div>
+      </a>
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img id="iphone" class="content1" src="https://tpc.googlesyndication.com/simgad/15524909298279285018" alt="">
+        </div>
+      </a>
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/137494_5722_SHA_DUB_fc-web.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhLzEzNzQ5NF81NzIyX1NIQV9EVUJfZmMtd2ViLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsInBvc2l0aW9uIjoidG9wIiwid2lkdGgiOjU4MCwiaGVpZ2h0IjoyNDB9LCJ3ZWJwIjp7InF1YWxpdHkiOjYwLCJsb3NzbGVzcyI6ZmFsc2V9fSwib3V0cHV0Rm9ybWF0Ijoid2VicCJ9"
+            alt="">
+          <pre>  indies tour of bangladesh,2025
+
+ Bangladesh         (27.2) 178/1
+
+ West indies          yet to bat
+
+ projected score: 324 @ 6.5 RPO
+                </pre>
+        </div>
+      </a>
+    </div>
+    <div id="content2">
+      <div id="postertext">
+        <pre>  POPULAR
+    LIVE STREAMING
+  TOURS</pre>
+      </div>
+      <a href="fancode2.html"><div class="subbcontent">
+        <img
+          src="https://images.fancode.com/skillup-uploads/cms-media/LaLiga_TV-vertical_2.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL0xhTGlnYV9UVi12ZXJ0aWNhbF8yLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjozNzYsImhlaWdodCI6NTY4fSwid2VicCI6eyJxdWFsaXR5Ijo2MCwibG9zc2xlc3MiOmZhbHNlfX0sIm91dHB1dEZvcm1hdCI6IndlYnAifQ=="
+          alt="" class="photo">
+        <pre style="color: white; text-decoration: none;"><p>LALIGA 2025-26
+15 Aug - 24 May, 2026</p></pre>
+      </div></a>
+      <a href="fancode2.html"><div class="subbcontent">
+        <img
+          src="https://images.fancode.com/skillup-uploads/cms-media/England-Tour-of-New-Zealand-2025_TV_banner-1280-x-1920_1-(1).jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL0VuZ2xhbmQtVG91ci1vZi1OZXctWmVhbGFuZC0yMDI1X1RWX2Jhbm5lci0xMjgwLXgtMTkyMF8xLSgxKS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJ3aWR0aCI6Mzc2LCJoZWlnaHQiOjU2OH0sIndlYnAiOnsicXVhbGl0eSI6NjAsImxvc3NsZXNzIjpmYWxzZX19LCJvdXRwdXRGb3JtYXQiOiJ3ZWJwIn0="
+          alt="" class="photo">
+        <pre  style="color: white; text-decoration: none;"><p>LALIGA 2025-26
+15 Aug - 24 May, 2026</p></pre>
+      </div></a>
+      <a href="fancode2.html"><div class="subbcontent">
+        <img
+          src="https://images.fancode.com/skillup-uploads/cms-media/West-Indies-tour-of-Bangladesh_2025_TV_banner-1280-x-1920_1_1760703249684.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL1dlc3QtSW5kaWVzLXRvdXItb2YtQmFuZ2xhZGVzaF8yMDI1X1RWX2Jhbm5lci0xMjgwLXgtMTkyMF8xXzE3NjA3MDMyNDk2ODQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImNvdmVyIiwid2lkdGgiOjM3NiwiaGVpZ2h0Ijo1Njh9LCJ3ZWJwIjp7InF1YWxpdHkiOjYwLCJsb3NzbGVzcyI6ZmFsc2V9fSwib3V0cHV0Rm9ybWF0Ijoid2VicCJ9"
+          alt="" class="photo">
+        <pre  style="color: white; text-decoration: none;"><p>LALIGA 2025-26
+15 Aug - 24 May, 2026</p></pre>
+      </div></a>
+      <a href="fancode2.html"><div class="subbcontent">
+        <img
+          src="https://images.fancode.com/skillup-uploads/cms-media/F1-GRAN-PREMIO-DE-LA-CIUDAD-DE-MEXICO-2025_TV_vertical.png?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL0YxLUdSQU4tUFJFTUlPLURFLUxBLUNJVURBRC1ERS1NRVhJQ08tMjAyNV9UVl92ZXJ0aWNhbC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJ3aWR0aCI6Mzc2LCJoZWlnaHQiOjU2OH0sIndlYnAiOnsicXVhbGl0eSI6NjAsImxvc3NsZXNzIjpmYWxzZX19LCJvdXRwdXRGb3JtYXQiOiJ3ZWJwIn0="
+          alt="" class="photo">
+        <pre  style="color: white; text-decoration: none;"><p>LALIGA 2025-26
+15 Aug - 24 May, 2026</p></pre>
+      </div></a>
+     <a href="fancode2.html"> <div class="subbcontent">
+        <img
+          src="https://images.fancode.com/skillup-uploads/cms-media/Zimbabwe-vs-Afghanistan-vectoer.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL1ppbWJhYndlLXZzLUFmZ2hhbmlzdGFuLXZlY3RvZXIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImNvdmVyIiwid2lkdGgiOjM3NiwiaGVpZ2h0Ijo1Njh9LCJ3ZWJwIjp7InF1YWxpdHkiOjYwLCJsb3NzbGVzcyI6ZmFsc2V9fSwib3V0cHV0Rm9ybWF0Ijoid2VicCJ9"
+          alt="" class="photo">
+        <pre  style="color: white; text-decoration: none;"><p>LALIGA 2025-26
+15 Aug - 24 May, 2026</p></pre>
+      </div></a>
+    </div>
+    <div id="content"><img id="background"
+        src="data:image/jpeg;base64,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"
+        alt=""></div>
+    <div class="heading">Watch Live</div>
+    <div id="content">
+
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/topSaves2210.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL3RvcFNhdmVzMjIxMC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJ3aWR0aCI6NTgyLCJoZWlnaHQiOjMzMn0sIndlYnAiOnsicXVhbGl0eSI6NjAsImxvc3NsZXNzIjpmYWxzZX19LCJvdXRwdXRGb3JtYXQiOiJ3ZWJwIn0="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/TGoalsM9.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL1RHb2Fsc005LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjo1ODIsImhlaWdodCI6MzMyfSwid2VicCI6eyJxdWFsaXR5Ijo2MCwibG9zc2xlc3MiOmZhbHNlfX0sIm91dHB1dEZvcm1hdCI6IndlYnAifQ=="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/MVPRound9.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL01WUFJvdW5kOS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJ3aWR0aCI6NTgyLCJoZWlnaHQiOjMzMn0sIndlYnAiOnsicXVhbGl0eSI6NjAsImxvc3NsZXNzIjpmYWxzZX19LCJvdXRwdXRGb3JtYXQiOiJ3ZWJwIn0="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/Round9highlights.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL1JvdW5kOWhpZ2hsaWdodHMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImNvdmVyIiwid2lkdGgiOjU4MiwiaGVpZ2h0IjozMzJ9LCJ3ZWJwIjp7InF1YWxpdHkiOjYwLCJsb3NzbGVzcyI6ZmFsc2V9fSwib3V0cHV0Rm9ybWF0Ijoid2VicCJ9"
+            alt="">
+          <pre>  Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+    </div>
+    <div id="content">
+
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/topSaves2210.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL3RvcFNhdmVzMjIxMC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJ3aWR0aCI6NTgyLCJoZWlnaHQiOjMzMn0sIndlYnAiOnsicXVhbGl0eSI6NjAsImxvc3NsZXNzIjpmYWxzZX19LCJvdXRwdXRGb3JtYXQiOiJ3ZWJwIn0="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/TGoalsM9.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL1RHb2Fsc005LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjo1ODIsImhlaWdodCI6MzMyfSwid2VicCI6eyJxdWFsaXR5Ijo2MCwibG9zc2xlc3MiOmZhbHNlfX0sIm91dHB1dEZvcm1hdCI6IndlYnAifQ=="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/MVPRound9.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL01WUFJvdW5kOS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJ3aWR0aCI6NTgyLCJoZWlnaHQiOjMzMn0sIndlYnAiOnsicXVhbGl0eSI6NjAsImxvc3NsZXNzIjpmYWxzZX19LCJvdXRwdXRGb3JtYXQiOiJ3ZWJwIn0="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/Round9highlights.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL1JvdW5kOWhpZ2hsaWdodHMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImNvdmVyIiwid2lkdGgiOjU4MiwiaGVpZ2h0IjozMzJ9LCJ3ZWJwIjp7InF1YWxpdHkiOjYwLCJsb3NzbGVzcyI6ZmFsc2V9fSwib3V0cHV0Rm9ybWF0Ijoid2VicCJ9"
+            alt="">
+          <pre>  Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+    </div>
+    <div id="content">
+
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/topSaves2210.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL3RvcFNhdmVzMjIxMC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJ3aWR0aCI6NTgyLCJoZWlnaHQiOjMzMn0sIndlYnAiOnsicXVhbGl0eSI6NjAsImxvc3NsZXNzIjpmYWxzZX19LCJvdXRwdXRGb3JtYXQiOiJ3ZWJwIn0="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/TGoalsM9.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL1RHb2Fsc005LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjo1ODIsImhlaWdodCI6MzMyfSwid2VicCI6eyJxdWFsaXR5Ijo2MCwibG9zc2xlc3MiOmZhbHNlfX0sIm91dHB1dEZvcm1hdCI6IndlYnAifQ=="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/MVPRound9.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL01WUFJvdW5kOS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJ3aWR0aCI6NTgyLCJoZWlnaHQiOjMzMn0sIndlYnAiOnsicXVhbGl0eSI6NjAsImxvc3NsZXNzIjpmYWxzZX19LCJvdXRwdXRGb3JtYXQiOiJ3ZWJwIn0="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/Round9highlights.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL1JvdW5kOWhpZ2hsaWdodHMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImNvdmVyIiwid2lkdGgiOjU4MiwiaGVpZ2h0IjozMzJ9LCJ3ZWJwIjp7InF1YWxpdHkiOjYwLCJsb3NzbGVzcyI6ZmFsc2V9fSwib3V0cHV0Rm9ybWF0Ijoid2VicCJ9"
+            alt="">
+          <pre>  Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+    </div>
+    <div id="content">
+
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/topSaves2210.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL3RvcFNhdmVzMjIxMC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJ3aWR0aCI6NTgyLCJoZWlnaHQiOjMzMn0sIndlYnAiOnsicXVhbGl0eSI6NjAsImxvc3NsZXNzIjpmYWxzZX19LCJvdXRwdXRGb3JtYXQiOiJ3ZWJwIn0="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/TGoalsM9.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL1RHb2Fsc005LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjo1ODIsImhlaWdodCI6MzMyfSwid2VicCI6eyJxdWFsaXR5Ijo2MCwibG9zc2xlc3MiOmZhbHNlfX0sIm91dHB1dEZvcm1hdCI6IndlYnAifQ=="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/MVPRound9.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL01WUFJvdW5kOS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJ3aWR0aCI6NTgyLCJoZWlnaHQiOjMzMn0sIndlYnAiOnsicXVhbGl0eSI6NjAsImxvc3NsZXNzIjpmYWxzZX19LCJvdXRwdXRGb3JtYXQiOiJ3ZWJwIn0="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/Round9highlights.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL1JvdW5kOWhpZ2hsaWdodHMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImNvdmVyIiwid2lkdGgiOjU4MiwiaGVpZ2h0IjozMzJ9LCJ3ZWJwIjp7InF1YWxpdHkiOjYwLCJsb3NzbGVzcyI6ZmFsc2V9fSwib3V0cHV0Rm9ybWF0Ijoid2VicCJ9"
+            alt="">
+          <pre>  Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+    </div>
+    <div id="content">
+
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/topSaves2210.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL3RvcFNhdmVzMjIxMC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJ3aWR0aCI6NTgyLCJoZWlnaHQiOjMzMn0sIndlYnAiOnsicXVhbGl0eSI6NjAsImxvc3NsZXNzIjpmYWxzZX19LCJvdXRwdXRGb3JtYXQiOiJ3ZWJwIn0="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/TGoalsM9.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL1RHb2Fsc005LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjo1ODIsImhlaWdodCI6MzMyfSwid2VicCI6eyJxdWFsaXR5Ijo2MCwibG9zc2xlc3MiOmZhbHNlfX0sIm91dHB1dEZvcm1hdCI6IndlYnAifQ=="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/MVPRound9.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL01WUFJvdW5kOS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJ3aWR0aCI6NTgyLCJoZWlnaHQiOjMzMn0sIndlYnAiOnsicXVhbGl0eSI6NjAsImxvc3NsZXNzIjpmYWxzZX19LCJvdXRwdXRGb3JtYXQiOiJ3ZWJwIn0="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/Round9highlights.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL1JvdW5kOWhpZ2hsaWdodHMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImNvdmVyIiwid2lkdGgiOjU4MiwiaGVpZ2h0IjozMzJ9LCJ3ZWJwIjp7InF1YWxpdHkiOjYwLCJsb3NzbGVzcyI6ZmFsc2V9fSwib3V0cHV0Rm9ybWF0Ijoid2VicCJ9"
+            alt="">
+          <pre>  Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+    </div>
+    <div id="content">
+
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/topSaves2210.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL3RvcFNhdmVzMjIxMC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJ3aWR0aCI6NTgyLCJoZWlnaHQiOjMzMn0sIndlYnAiOnsicXVhbGl0eSI6NjAsImxvc3NsZXNzIjpmYWxzZX19LCJvdXRwdXRGb3JtYXQiOiJ3ZWJwIn0="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/TGoalsM9.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL1RHb2Fsc005LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjo1ODIsImhlaWdodCI6MzMyfSwid2VicCI6eyJxdWFsaXR5Ijo2MCwibG9zc2xlc3MiOmZhbHNlfX0sIm91dHB1dEZvcm1hdCI6IndlYnAifQ=="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/MVPRound9.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL01WUFJvdW5kOS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJ3aWR0aCI6NTgyLCJoZWlnaHQiOjMzMn0sIndlYnAiOnsicXVhbGl0eSI6NjAsImxvc3NsZXNzIjpmYWxzZX19LCJvdXRwdXRGb3JtYXQiOiJ3ZWJwIn0="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/Round9highlights.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL1JvdW5kOWhpZ2hsaWdodHMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImNvdmVyIiwid2lkdGgiOjU4MiwiaGVpZ2h0IjozMzJ9LCJ3ZWJwIjp7InF1YWxpdHkiOjYwLCJsb3NzbGVzcyI6ZmFsc2V9fSwib3V0cHV0Rm9ybWF0Ijoid2VicCJ9"
+            alt="">
+          <pre>  Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+    </div>
+    <div id="content">
+
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/topSaves2210.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL3RvcFNhdmVzMjIxMC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJ3aWR0aCI6NTgyLCJoZWlnaHQiOjMzMn0sIndlYnAiOnsicXVhbGl0eSI6NjAsImxvc3NsZXNzIjpmYWxzZX19LCJvdXRwdXRGb3JtYXQiOiJ3ZWJwIn0="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/TGoalsM9.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL1RHb2Fsc005LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjo1ODIsImhlaWdodCI6MzMyfSwid2VicCI6eyJxdWFsaXR5Ijo2MCwibG9zc2xlc3MiOmZhbHNlfX0sIm91dHB1dEZvcm1hdCI6IndlYnAifQ=="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/MVPRound9.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL01WUFJvdW5kOS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJ3aWR0aCI6NTgyLCJoZWlnaHQiOjMzMn0sIndlYnAiOnsicXVhbGl0eSI6NjAsImxvc3NsZXNzIjpmYWxzZX19LCJvdXRwdXRGb3JtYXQiOiJ3ZWJwIn0="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/Round9highlights.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL1JvdW5kOWhpZ2hsaWdodHMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImNvdmVyIiwid2lkdGgiOjU4MiwiaGVpZ2h0IjozMzJ9LCJ3ZWJwIjp7InF1YWxpdHkiOjYwLCJsb3NzbGVzcyI6ZmFsc2V9fSwib3V0cHV0Rm9ybWF0Ijoid2VicCJ9"
+            alt="">
+          <pre>  Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+    </div>
+    <div id="content">
+
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/topSaves2210.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL3RvcFNhdmVzMjIxMC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJ3aWR0aCI6NTgyLCJoZWlnaHQiOjMzMn0sIndlYnAiOnsicXVhbGl0eSI6NjAsImxvc3NsZXNzIjpmYWxzZX19LCJvdXRwdXRGb3JtYXQiOiJ3ZWJwIn0="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/TGoalsM9.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL1RHb2Fsc005LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjo1ODIsImhlaWdodCI6MzMyfSwid2VicCI6eyJxdWFsaXR5Ijo2MCwibG9zc2xlc3MiOmZhbHNlfX0sIm91dHB1dEZvcm1hdCI6IndlYnAifQ=="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/MVPRound9.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL01WUFJvdW5kOS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJ3aWR0aCI6NTgyLCJoZWlnaHQiOjMzMn0sIndlYnAiOnsicXVhbGl0eSI6NjAsImxvc3NsZXNzIjpmYWxzZX19LCJvdXRwdXRGb3JtYXQiOiJ3ZWJwIn0="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/Round9highlights.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL1JvdW5kOWhpZ2hsaWdodHMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImNvdmVyIiwid2lkdGgiOjU4MiwiaGVpZ2h0IjozMzJ9LCJ3ZWJwIjp7InF1YWxpdHkiOjYwLCJsb3NzbGVzcyI6ZmFsc2V9fSwib3V0cHV0Rm9ybWF0Ijoid2VicCJ9"
+            alt="">
+          <pre>  Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+    </div>
+    <div id="content">
+
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/topSaves2210.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL3RvcFNhdmVzMjIxMC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJ3aWR0aCI6NTgyLCJoZWlnaHQiOjMzMn0sIndlYnAiOnsicXVhbGl0eSI6NjAsImxvc3NsZXNzIjpmYWxzZX19LCJvdXRwdXRGb3JtYXQiOiJ3ZWJwIn0="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/TGoalsM9.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL1RHb2Fsc005LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjo1ODIsImhlaWdodCI6MzMyfSwid2VicCI6eyJxdWFsaXR5Ijo2MCwibG9zc2xlc3MiOmZhbHNlfX0sIm91dHB1dEZvcm1hdCI6IndlYnAifQ=="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/MVPRound9.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL01WUFJvdW5kOS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0IjoiY292ZXIiLCJ3aWR0aCI6NTgyLCJoZWlnaHQiOjMzMn0sIndlYnAiOnsicXVhbGl0eSI6NjAsImxvc3NsZXNzIjpmYWxzZX19LCJvdXRwdXRGb3JtYXQiOiJ3ZWJwIn0="
+            alt="">
+          <pre> Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+      <a href="fancode2.html">
+        <div class="subcontent">
+          <img class="content1"
+            src="https://images.fancode.com/skillup-uploads/cms-media/Round9highlights.jpg?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvY21zLW1lZGlhL1JvdW5kOWhpZ2hsaWdodHMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImNvdmVyIiwid2lkdGgiOjU4MiwiaGVpZ2h0IjozMzJ9LCJ3ZWJwIjp7InF1YWxpdHkiOjYwLCJsb3NzbGVzcyI6ZmFsc2V9fSwib3V0cHV0Rm9ybWF0Ijoid2VicCJ9"
+            alt="">
+          <pre>  Round 9: Top 5 Saves
+                </pre>
+        </div>
+      </a>
+    </div>
+    <footer class="footer2" style="margin-top: 0%;">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Services</h3>
+          <p>Store Locator</p>
+          <p>Buying Guide</p>
+          <p>Frame Size</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>We Are Hiring</p>
+          <p>Refer And Earn</p>
+          <p>Lenskart Coupons</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Help</h3>
+          <p>FAQ's</p>
+          <p>Grievance Redressal</p>
+          <p>Cardemi</p>
+        </div>
+
+        <div class="footer-section app-section">
+          <p>Download Lenskart App to buy</p>
+          <p>Eyeglasses, Sunglasses and Contact Lenses</p>
+          <p>[Google Play] [App Store]</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <span>T & C</span>
+          <span>Privacy</span>
+          <span>Disclaimer</span>
+        </div>
+
+        <div class="footer-right">
+          <span>Version 1.0.0</span>
+          <span class="divider">||</span>
+          <span>Follow Us</span>
+          <span>Facebook</span>
+          <span>Instagram</span>
+          <span>Twitter</span>
+          <span>Chat</span>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+
+</html>
